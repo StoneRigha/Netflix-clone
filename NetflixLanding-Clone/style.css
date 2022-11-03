@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    background-color: #121212;
+    color: white;
+}
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 26px 56px;
+    position: absolute;
+    width: 100%;
+    z-index: 5;
+
+}
+header a.logo{
+    display: block;
+}
+header .logo svg{
+    fill: #e50914;
+    height: 37px; 
+}
+header div+div{
+    text-align: right;
+}
+header a.button{
+    display: inline-block;
+    background-color: #e50914;
+    color: white;
+    text-decoration: none;
+    padding: 7px 17px;
+    border-radius: 3px;
+
+}
+header select{
+    background: transparent;
+    color: white;
+    padding: 6px 0 6px 20px;
+} 
+header div.select{
+    display: inline-block;
+    margin-right: 30px;
+}
+header div.select svg{
+    height: 20px;
+    fill: white;
+    position: absolute;
+    margin-top: 9px;
+    margin-left: 4px;
+}
+div.splash{
+    position: relative;
+}
+div.splash div.gradient{
+    background-image: linear-gradient(to top, rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
+    position: absolute;
+    inset: 0;
+}
+div.splash div.background img{
+    max-width: 100%;
+    opacity: 0.6;
+}
+div.splash div.content{
+    max-width: 655px;
+    position: absolute;
+    inset:0;
+    left: 50%;
+    margin-left: -327.5px;
+    display: grid;
+    align-items: center;
+    text-align: center;
+}
+div.splash h1{
+    font-size: 3.125rem;
+    font-weight: bold;
+}
+div.splash h2{
+    font-size: 1.625rem;
+    margin-top: 13px;
+    margin-bottom: 29px;
+    font-weight: normal;
+}
+div.splash h3{
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+div.splash form{
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr max-content;
+    margin-top: 20px;
+}
+div.splash input{
+    padding: 10px;
+    font-size: 1.2rem;
+    width: 100%;
+}
+div.splash input ~ span{
+    position: absolute;
+    left: 12px;
+    top: 16px;
+    z-index: 3;
+    color: #aaa;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+div.splash input:focus{
+    padding-top: 14px;
+    padding-bottom: 6px;
+}
+div.splash:focus ~ span{
+    top: 2px;
+    font-size: 0.8rem;
+}
+div.splash button{
+    font-size: 1.625rem;
+    padding: 6.8px 26px;
+    background-color: #e50914;
+    color: white;
+    border: 0;
+}
